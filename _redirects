@@ -1,56 +1,115 @@
-# Legacy PHP redirects to static HTML
-/index.php /index.html 301
-/about.php /about.html 301
-/services.php /services.html 301
-/residential.php /residential.html 301
-/commercial.php /commercial.html 301
-/government.php /government.html 301
-/pharmaceutical-projects.php /pharmaceutical-projects.html 301
-/institutional-projects.php /institutional-projects.html 301
-/customized-bungalows.php /customized-bungalows.html 301
-/interior-design.php /interior-design.html 301
-/contact.php /contact.html 301
-/civil-work.php /civil-work.html 301
-/redevelopments.php /redevelopments.html 301
-/project-details.php /project-details.html 301
-/auda-bopal.php /auda-bopal.html 301
-/haridwar-avenue.php /haridwar-avenue.html 301
-/hitesh-shah-bungalows.php /hitesh-shah-bungalows.html 301
-/santoor-farm.php /santoor-farm.html 301
-/sarva-shakti.php /sarva-shakti.html 301
-/satva-shakti.php /satva-shakti.html 301
-/shakti-enclave.php /shakti-enclave.html 301
-/shakti-icon.php /shakti-icon.html 301
-/shashwat-bungalows.php /shashwat-bungalows.html 301
-/shreeji-heights.php /shreeji-heights.html 301
-/career.php /career.html 301
-/terms.php /terms.html 301
-/privacy-policy.php /privacy-policy.html 301
+# Redirect legacy .php and .html to clean folder routes
+/index.php                  /                               301
+/index.html                 /                               301
 
-# Clean URL rewrites (for Cloudflare Pages / Netlify)
-/about /about.html 200
-/services /services.html 200
-/residential /residential.html 200
-/commercial /commercial.html 200
-/government /government.html 200
-/pharmaceutical-projects /pharmaceutical-projects.html 200
-/institutional-projects /institutional-projects.html 200
-/customized-bungalows /customized-bungalows.html 200
-/interior-design /interior-design.html 200
-/contact /contact.html 200
-/civil-work /civil-work.html 200
-/redevelopments /redevelopments.html 200
-/project-details /project-details.html 200
-/auda-bopal /auda-bopal.html 200
-/haridwar-avenue /haridwar-avenue.html 200
-/hitesh-shah-bungalows /hitesh-shah-bungalows.html 200
-/santoor-farm /santoor-farm.html 200
-/sarva-shakti /sarva-shakti.html 200
-/satva-shakti /satva-shakti.html 200
-/shakti-enclave /shakti-enclave.html 200
-/shakti-icon /shakti-icon.html 200
-/shashwat-bungalows /shashwat-bungalows.html 200
-/shreeji-heights /shreeji-heights.html 200
-/career /career.html 200
-/terms /terms.html 200
-/privacy-policy /privacy-policy.html 200
+/about.php                  /about/                         301
+/about.html                 /about/                         301
+/about                      /about/                         301
+
+/services.php               /services/                      301
+/services.html              /services/                      301
+/services                   /services/                      301
+
+/contact.php                /contact/                       301
+/contact.html               /contact/                       301
+/contact                    /contact/                       301
+
+/civil-work.php             /civil-work/                    301
+/civil-work.html            /civil-work/                    301
+/civil-work                 /civil-work/                    301
+
+/redevelopments.php         /redevelopments/                301
+/redevelopments.html        /redevelopments/                301
+/redevelopments             /redevelopments/                301
+
+/projects.php               /projects/                      301
+/projects.html              /projects/                      301
+/project-details.php        /projects/                      301
+/project-details.html       /projects/                      301
+
+/residential.php            /projects/residential/          301
+/residential.html           /projects/residential/          301
+/projects/residential       /projects/residential/          301
+
+/commercial.php             /projects/commercial/           301
+/commercial.html            /projects/commercial/           301
+/projects/commercial        /projects/commercial/           301
+
+/government.php             /projects/government/           301
+/government.html            /projects/government/           301
+/projects/government        /projects/government/           301
+
+/pharmaceutical-projects.php /projects/pharmaceutical/      301
+/pharmaceutical-projects.html /projects/pharmaceutical/     301
+/projects/pharmaceutical-projects/ /projects/pharmaceutical/ 301
+/projects/pharmaceutical    /projects/pharmaceutical/       301
+
+/institutional-projects.php /projects/institutional/        301
+/institutional-projects.html /projects/institutional/       301
+/projects/institutional-projects/ /projects/institutional/  301
+/projects/institutional     /projects/institutional/        301
+
+/customized-bungalows.php   /projects/customized-bungalows/ 301
+/customized-bungalows.html  /projects/customized-bungalows/ 301
+/projects/customized-bungalows /projects/customized-bungalows/ 301
+
+/interior-design.php        /projects/interior/             301
+/interior-design.html       /projects/interior/             301
+/projects/interior-design/  /projects/interior/             301
+/projects/interior          /projects/interior/             301
+
+# Individual Project Detail Pages
+/auda-bopal.php             /projects/auda-bopal/           301
+/auda-bopal.html            /projects/auda-bopal/           301
+/projects/auda-bopal        /projects/auda-bopal/           301
+/projects/government/auda-bopal/ /projects/auda-bopal/      301
+
+/haridwar-avenue.php        /projects/haridwar-avenue/      301
+/haridwar-avenue.html       /projects/haridwar-avenue/      301
+/projects/haridwar-avenue   /projects/haridwar-avenue/      301
+
+/hitesh-shah-bungalows.php  /projects/hitesh-shah-bungalows/ 301
+/hitesh-shah-bungalows.html /projects/hitesh-shah-bungalows/ 301
+/projects/hitesh-shah-bungalows /projects/hitesh-shah-bungalows/ 301
+
+/santoor-farm.php           /projects/santoor-farm/         301
+/santoor-farm.html          /projects/santoor-farm/         301
+/projects/santoor-farm      /projects/santoor-farm/         301
+
+/sarva-shakti.php           /projects/sarva-shakti/         301
+/sarva-shakti.html          /projects/sarva-shakti/         301
+/projects/sarva-shakti      /projects/sarva-shakti/         301
+
+/satva-shakti.php           /projects/satva-shakti/         301
+/satva-shakti.html          /projects/satva-shakti/         301
+/projects/satva-shakti      /projects/satva-shakti/         301
+
+/shakti-enclave.php         /projects/shakti-enclave/       301
+/shakti-enclave.html        /projects/shakti-enclave/       301
+/projects/shakti-enclave    /projects/shakti-enclave/       301
+
+/shakti-icon.php            /projects/shakti-icon/          301
+/shakti-icon.html           /projects/shakti-icon/          301
+/projects/shakti-icon       /projects/shakti-icon/          301
+
+/shashwat-bungalows.php     /projects/shashwat-bungalows/   301
+/shashwat-bungalows.html    /projects/shashwat-bungalows/   301
+/projects/shashwat-bungalows /projects/shashwat-bungalows/  301
+
+/shreeji-heights.php        /projects/shreeji-heights/      301
+/shreeji-heights.html       /projects/shreeji-heights/      301
+/projects/shreeji-heights   /projects/shreeji-heights/      301
+/projects/commercial/shreeji-heights/ /projects/shreeji-heights/ 301
+
+# Policy and Career Pages
+/career.php                 /career/                        301
+/career.html                /career/                        301
+/career                     /career/                        301
+
+/terms.php                  /terms/                         301
+/terms.html                 /terms/                         301
+/terms                      /terms/                         301
+
+/privacy-policy.php         /privacy-policy/                301
+/privacy-policy.html        /privacy-policy/                301
+/privacy-policy             /privacy-policy/                301

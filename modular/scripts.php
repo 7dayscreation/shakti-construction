@@ -1,32 +1,33 @@
+<?php $rootPrefix = $rootPrefix ?? ''; ?>
 <!-- jQuery -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/animsition.min.js"></script>
-<script src="assets/js/jquery.validate.min.js"></script>
-<script src="assets/js/wow.min.js"></script>
-<script src="assets/js/jquery.stellar.min.js"></script>
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/isotope.pkgd.min.js"></script>
-<script src="assets/js/imagesloaded.pkgd.min.js"></script>
-<script src="assets/js/plugins.js"></script>
-<script src="assets/js/sly.min.js"></script>
+<script src="<?php echo $rootPrefix; ?>assets/js/jquery.min.js"></script>
+<script src="<?php echo $rootPrefix; ?>assets/js/bootstrap.min.js"></script>
+<script src="<?php echo $rootPrefix; ?>assets/js/animsition.min.js"></script>
+<script src="<?php echo $rootPrefix; ?>assets/js/jquery.validate.min.js"></script>
+<script src="<?php echo $rootPrefix; ?>assets/js/wow.min.js"></script>
+<script src="<?php echo $rootPrefix; ?>assets/js/jquery.stellar.min.js"></script>
+<script src="<?php echo $rootPrefix; ?>assets/js/jquery.magnific-popup.min.js"></script>
+<script src="<?php echo $rootPrefix; ?>assets/js/owl.carousel.min.js"></script>
+<script src="<?php echo $rootPrefix; ?>assets/js/isotope.pkgd.min.js"></script>
+<script src="<?php echo $rootPrefix; ?>assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="<?php echo $rootPrefix; ?>assets/js/plugins.js"></script>
+<script src="<?php echo $rootPrefix; ?>assets/js/sly.min.js"></script>
 
 <!-- Slider revolution -->
-<script src="assets/js/rev-slider/jquery.themepunch.tools.min.js"></script>
-<script src="assets/js/rev-slider/jquery.themepunch.revolution.min.js"></script>
+<script src="<?php echo $rootPrefix; ?>assets/js/rev-slider/jquery.themepunch.tools.min.js"></script>
+<script src="<?php echo $rootPrefix; ?>assets/js/rev-slider/jquery.themepunch.revolution.min.js"></script>
 
 <!-- Slider revolution 5x Extensions -->
-<script src="assets/js/rev-slider/revolution.extension.actions.min.js"></script>
-<script src="assets/js/rev-slider/revolution.extension.carousel.min.js"></script>
-<script src="assets/js/rev-slider/revolution.extension.kenburn.min.js"></script>
-<script src="assets/js/rev-slider/revolution.extension.layeranimation.min.js"></script>
-<script src="assets/js/rev-slider/revolution.extension.migration.min.js"></script>
-<script src="assets/js/rev-slider/revolution.extension.navigation.min.js"></script>
-<script src="assets/js/rev-slider/revolution.extension.parallax.min.js"></script>
-<script src="assets/js/rev-slider/revolution.extension.slideanims.min.js"></script>
-<script src="assets/js/rev-slider/revolution.extension.video.min.js"></script>
+<script src="<?php echo $rootPrefix; ?>assets/js/rev-slider/revolution.extension.actions.min.js"></script>
+<script src="<?php echo $rootPrefix; ?>assets/js/rev-slider/revolution.extension.carousel.min.js"></script>
+<script src="<?php echo $rootPrefix; ?>assets/js/rev-slider/revolution.extension.kenburn.min.js"></script>
+<script src="<?php echo $rootPrefix; ?>assets/js/rev-slider/revolution.extension.layeranimation.min.js"></script>
+<script src="<?php echo $rootPrefix; ?>assets/js/rev-slider/revolution.extension.migration.min.js"></script>
+<script src="<?php echo $rootPrefix; ?>assets/js/rev-slider/revolution.extension.navigation.min.js"></script>
+<script src="<?php echo $rootPrefix; ?>assets/js/rev-slider/revolution.extension.parallax.min.js"></script>
+<script src="<?php echo $rootPrefix; ?>assets/js/rev-slider/revolution.extension.slideanims.min.js"></script>
+<script src="<?php echo $rootPrefix; ?>assets/js/rev-slider/revolution.extension.video.min.js"></script>
 
 <!-- Main Scripts -->
-<script src="assets/js/scripts.js"></script> 
-<script src="assets/js/rev-slider-init.js"></script>
+<script src="<?php echo $rootPrefix; ?>assets/js/scripts.js"></script> 
+<script src="<?php echo $rootPrefix; ?>assets/js/rev-slider-init.js"></script>

@@ -2,49 +2,52 @@
 
 A high-performance, mobile-responsive, SEO-optimized static website for **Shakti Construction - Ahmedabad**, ready for deployment to **GitHub Pages**, **Cloudflare Pages**, or any static hosting provider.
 
-Converted from static PHP into clean static HTML with modular architecture and centralized assets.
+Converted from static PHP into clean, folder-based static HTML with modular architecture and centralized assets.
 
 ---
 
-## Site Structure & Routes
+## Site Structure & Directory Routes
 
-| Route | File | Description |
+All routes follow the clean folder structure (`sitename/<category>/`):
+
+| Route | Source Directory & File | Description |
 | :--- | :--- | :--- |
 | `/` | `index.html` | Homepage & brand overview with revolution slider |
-| `/about.html` | `about.html` | Company history, vision, leadership & team |
-| `/services.html` | `services.html` | Comprehensive civil, residential & commercial services |
-| `/residential.html` | `residential.html` | Residential architectural projects showcase |
-| `/commercial.html` | `commercial.html` | Commercial towers, offices & corporate spaces |
-| `/government.html` | `government.html` | Government & AUDA infrastructure developments |
-| `/pharmaceutical-projects.html` | `pharmaceutical-projects.html` | Cleanroom & pharmaceutical turnkey facilities |
-| `/institutional-projects.html` | `institutional-projects.html` | Institutional & educational civil projects |
-| `/customized-bungalows.html` | `customized-bungalows.html` | Bespoke residential villas & bungalows |
-| `/interior-design.html` | `interior-design.html` | Interior architecture & spatial design |
-| `/civil-work.html` | `civil-work.html` | Civil construction engineering solutions |
-| `/redevelopments.html` | `redevelopments.html` | Urban redevelopment & revitalization projects |
-| `/contact.html` | `contact.html` | Office address, phone, email & map location |
-| `/career.html` | `career.html` | Careers & employment opportunities |
-| `/terms.html` | `terms.html` | Terms & Conditions |
-| `/privacy-policy.html` | `privacy-policy.html` | Privacy & data protection policy |
-| `/auda-bopal.html` | `auda-bopal.html` | AUDA Bopal Affordable Housing Project detail |
-| `/haridwar-avenue.html` | `haridwar-avenue.html` | Haridwar Avenue Project detail |
-| `/hitesh-shah-bungalows.html` | `hitesh-shah-bungalows.html` | Hitesh Shah Bungalow Project detail |
-| `/santoor-farm.html` | `santoor-farm.html` | Santoor Farm Project detail |
-| `/sarva-shakti.html` | `sarva-shakti.html` | Sarva Shakti Project detail |
-| `/satva-shakti.html` | `satva-shakti.html` | Satva Shakti Project detail |
-| `/shakti-enclave.html` | `shakti-enclave.html` | Shakti Enclave Project detail |
-| `/shakti-icon.html` | `shakti-icon.html` | Shakti Icon Commercial Project detail |
-| `/shashwat-bungalows.html` | `shashwat-bungalows.html` | Shashwat Bungalows Project detail |
-| `/shreeji-heights.html` | `shreeji-heights.html` | Shreeji Heights Project detail |
+| `/about/` | `about/index.html` | Company history, vision, leadership & team |
+| `/services/` | `services/index.html` | Comprehensive civil, residential & commercial services |
+| `/contact/` | `contact/index.html` | Office address, phone, email & map location |
+| `/projects/` | `projects/index.html` | Portfolio overview showcasing all project sectors |
+| `/projects/residential/` | `projects/residential/index.html` | Residential architectural projects showcase |
+| `/projects/commercial/` | `projects/commercial/index.html` | Commercial towers, offices & corporate spaces |
+| `/projects/government/` | `projects/government/index.html` | Government & AUDA infrastructure developments |
+| `/projects/pharmaceutical/` | `projects/pharmaceutical/index.html` | Cleanroom & pharmaceutical turnkey facilities |
+| `/projects/institutional/` | `projects/institutional/index.html` | Institutional & educational civil projects |
+| `/projects/customized-bungalows/` | `projects/customized-bungalows/index.html` | Bespoke residential villas & bungalows |
+| `/projects/interior/` | `projects/interior/index.html` | Interior architecture & spatial design |
+| `/civil-work/` | `civil-work/index.html` | Civil construction engineering solutions |
+| `/redevelopments/` | `redevelopments/index.html` | Urban redevelopment & revitalization projects |
+| `/career/` | `career/index.html` | Careers & employment opportunities |
+| `/terms/` | `terms/index.html` | Terms & Conditions |
+| `/privacy-policy/` | `privacy-policy/index.html` | Privacy & data protection policy |
+| `/projects/auda-bopal/` | `projects/auda-bopal/index.html` | AUDA Bopal Affordable Housing Project detail |
+| `/projects/haridwar-avenue/` | `projects/haridwar-avenue/index.html` | Haridwar Avenue Project detail |
+| `/projects/hitesh-shah-bungalows/` | `projects/hitesh-shah-bungalows/index.html` | Hitesh Shah Bungalow Project detail |
+| `/projects/santoor-farm/` | `projects/santoor-farm/index.html` | Santoor Farm Project detail |
+| `/projects/sarva-shakti/` | `projects/sarva-shakti/index.html` | Sarva Shakti Project detail |
+| `/projects/satva-shakti/` | `projects/satva-shakti/index.html` | Satva Shakti Project detail |
+| `/projects/shakti-enclave/` | `projects/shakti-enclave/index.html` | Shakti Enclave Project detail |
+| `/projects/shakti-icon/` | `projects/shakti-icon/index.html` | Shakti Icon Commercial Project detail |
+| `/projects/shashwat-bungalows/` | `projects/shashwat-bungalows/index.html` | Shashwat Bungalows Project detail |
+| `/projects/shreeji-heights/` | `projects/shreeji-heights/index.html` | Shreeji Heights Project detail |
 
 ---
 
 ## Modular Sections (`modular/`)
 
-To make maintenance and future updates simple, reusable site components have been separated into modular sections:
+Reusable site components are cleanly separated in `modular/`:
 
 - `modular/header.php` / `header.html`: Top navbar with branding, mobile toggle, phone & social links.
-- `modular/menu.php` / `menu.html`: Slide-out overlay navigation menu.
+- `modular/menu.php` / `menu.html`: Slide-out overlay navigation menu matching the category structure.
 - `modular/navbar.php` / `navbar.html`: Combined menu and header component.
 - `modular/footer.php` / `footer.html`: Global site footer with links and company info.
 - `modular/projects-thumb.php` / `projects-thumb.html`: "Other Projects" thumbnail carousel.
@@ -58,7 +61,7 @@ To make maintenance and future updates simple, reusable site components have bee
 
 ## Assets Organization (`assets/`)
 
-All static resources have been moved into the consolidated `assets/` folder:
+All static resources reside in `assets/`:
 
 ```
 assets/
@@ -69,7 +72,7 @@ assets/
 └── projects/     # Architectural portfolio imagery and project galleries
 ```
 
-All references across HTML, CSS, and JS files have been updated to use relative paths (`assets/...`), ensuring 100% portability.
+All references across all depths use portable relative paths (`../assets/...`, `../../assets/...`), ensuring 100% portability on any host.
 
 ---
 
@@ -77,14 +80,12 @@ All references across HTML, CSS, and JS files have been updated to use relative 
 
 All original PHP source files are safely backed up in `_php_backup/` (ignored by Git for a clean static deployment).
 
-If you make modifications to the PHP templates and want to regenerate all static HTML pages:
+If you make modifications to the PHP templates and want to regenerate all folder-based static HTML pages:
 
 ```bash
 cd _php_backup
 php generate_static.php
 ```
-
-This will automatically render all pages with output buffering, resolve paths, clean characters, and write updated static HTML pages to the root directory.
 
 ---
 
@@ -92,11 +93,11 @@ This will automatically render all pages with output buffering, resolve paths, c
 
 ### GitHub Pages
 1. Push this repository to GitHub.
-2. In your GitHub repository, go to **Settings** > **Pages**.
+2. Go to **Settings** > **Pages**.
 3. Under **Build and deployment**:
    - Source: **Deploy from a branch**
    - Branch: **main** / folder: **/ (root)**
-4. Save. GitHub Pages will serve your site directly.
+4. Save. GitHub Pages will serve all clean folders directly (e.g., `sitename/about/`, `sitename/projects/residential/`).
 
 ### Cloudflare Pages
 - **Framework preset**: None

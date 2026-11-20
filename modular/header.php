@@ -1,4 +1,5 @@
     <!-- Header / Navbar -->
+    <?php $rootPrefix = $rootPrefix ?? ''; ?>
     <header class="navbar boxed js-navbar">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
         <span class="icon-bar"></span>
@@ -6,8 +7,8 @@
         <span class="icon-bar"></span>
       </button>
 
-      <a class="brand" href="index.html">
-        <img alt="Shakti Construction" src="assets/images/logo-light.png">
+      <a class="brand" href="<?php echo $rootPrefix; ?>">
+        <img alt="Shakti Construction" src="<?php echo $rootPrefix; ?>assets/images/logo-light.png">
         <div class="brand-info">
           <div class="brand-text">Construction</div>
         </div>
