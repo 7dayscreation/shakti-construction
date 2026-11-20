@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shakticonstruction.co.in/sitemap.xml
